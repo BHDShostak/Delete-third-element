@@ -1,14 +1,14 @@
 
 def kill3charter(txt):
     OutText = ''
-    for i in range (0,l):
+    for i, char in enumerate(txt):
         if i % 3 != 0:
-            OutText += txt[i]
+            OutText += char 
     return OutText
 
-txt = input () #input the text, who need a delete every 3-th charachter
+txt = input() #input the text, who need a delete every 3-th charachter
 
-l = len (txt) #count a long of text
+l = len(txt) #count a long of text
 
 print(kill3charter(txt)) # output text to consumer
 
